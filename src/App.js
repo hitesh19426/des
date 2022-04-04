@@ -1,5 +1,6 @@
 import './App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import LayoutPage from './routes/layout'
 import HomePage from './routes/home'
 import AboutPage from './routes/about'
 import EligibilityPage from './routes/eligibilty'
@@ -13,7 +14,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path = "/" element = {<HomePage/>}>
+        <Route path = "/" element = {<LayoutPage/>}>
+          <Route index element={<HomePage />} />
           <Route path = "about" element = {<AboutPage/>} />
           <Route path = "eligibility" element = {<EligibilityPage />} />
           <Route path = "courses" element = {<CoursesPage/>} />
