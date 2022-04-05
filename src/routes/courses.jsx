@@ -30,7 +30,7 @@ function CourseCard(props){
 
 function ClickableCard(props){
     return (
-        <Nav.Link href="/" style={{'text-decoration': 'none', color:'black'}} >
+        <Nav.Link href="courses/institute" style={{'text-decoration': 'none', color:'black'}} >
             <CourseCard icon={props.icon} count={props.count} title={props.title} ></CourseCard>
         </Nav.Link>
     )

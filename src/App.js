@@ -11,6 +11,8 @@ import StudentLoginPage from './routes/student_login'
 import StudentSignupPage from './routes/student_signup'
 import InstituteLoginPage from './routes/institute_login'
 import InstituteSignupPage from './routes/institute_signup'
+import CoursesInstitutePage from './routes/courses_institute'
+import ConsortiumPartnersPage from './routes/consortium-partners'
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           <Route path = "about" element = {<AboutPage/>} />
           <Route path = "eligibility" element = {<EligibilityPage />} />
           <Route path = "courses" element = {<CoursesPage/>} />
+            <Route path = "courses/institute" element = {<CoursesInstitutePage/>} />
+              <Route path = "institute/consortium-partners" element = {<ConsortiumPartnersPage/>} />
           <Route path = "founders" element = {<FoundersPage />} />
           <Route path = "contact" element = {<ContactPage/>} />
           <Route path = "student_login" element = {<StudentLoginPage />} />

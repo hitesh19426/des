@@ -8,7 +8,7 @@ import {Form, Container, Button, Row, Col, Card, Nav} from 'react-bootstrap'
 export default function StudentLoginPage(props) {
     
     return (
-        <Card className="mt-5 mx-auto col-6" style={{'background-color': '#F6F6FF'}} >
+        <Card className="mt-5 mx-auto col-5" style={{'background-color': '#F6F6FF'}} >
             <Container className="">
                 <Col>
                     <Form className="mt-3 mb-3">
@@ -57,7 +57,7 @@ export default function StudentLoginPage(props) {
                         <hr style={{height: 3}} />
 
                         <Row className="text-center">
-                            <Nav.Link href="#home" style={{color: 'black'}} > Sign in as institute? </Nav.Link>
+                            <Nav.Link href="institute_login" style={{color: 'black'}} > Sign in as institute? </Nav.Link>
                         </Row>
 
                     </Form>
