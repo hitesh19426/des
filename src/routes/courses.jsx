@@ -58,7 +58,7 @@ export default function CoursesPage() {
                         <Row> <h1> Courses </h1> </Row>
                         <Row> <h6> We offer degress in varied discipline across colleges in India </h6> </Row> 
                     </Col>
-                    <Col className="col-3  align-self-end mr-0">
+                    <Col className="col-3 align-self-end mr-0">
                         {/* <Button className="mt-auto mb-0"> Browse All </Button> */}
                         <Nav.Link href="#browse_all"> Browse All </Nav.Link>
                     </Col>

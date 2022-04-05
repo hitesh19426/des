@@ -7,8 +7,10 @@ import EligibilityPage from './routes/eligibilty'
 import CoursesPage from './routes/courses'
 import FoundersPage from './routes/founders'
 import ContactPage from './routes/contact'
-import LoginPage from './routes/login'
-import SignupPage from './routes/signup'
+import StudentLoginPage from './routes/student_login'
+import StudentSignupPage from './routes/student_signup'
+import InstituteLoginPage from './routes/institute_login'
+import InstituteSignupPage from './routes/institute_signup'
 
 function App() {
   return (
@@ -21,8 +23,10 @@ function App() {
           <Route path = "courses" element = {<CoursesPage/>} />
           <Route path = "founders" element = {<FoundersPage />} />
           <Route path = "contact" element = {<ContactPage/>} />
-          <Route path = "login" element = {<LoginPage />} />
-          <Route path = "signup" element = {<SignupPage/>} />
+          <Route path = "student_login" element = {<StudentLoginPage />} />
+          <Route path = "institute_login" element = {<InstituteLoginPage />} />
+          <Route path = "student_signup" element = {<StudentSignupPage/>} />
+          <Route path = "institute_signup" element = {<InstituteSignupPage/>} />
         </Route>
       </Routes>
     </BrowserRouter>

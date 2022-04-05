@@ -31,8 +31,8 @@ export default function MyNavBar() {
                   <Nav.Link href="/contact">Contact</Nav.Link>
                 </Nav>
                 <Nav>
-                  <Nav.Link href="/login">Login</Nav.Link>
-                  <Nav.Link eventKey={2} href="/signup">
+                  <Nav.Link href="/student_login">Login</Nav.Link>
+                  <Nav.Link eventKey={2} href="/student_signup">
                     Sign Up
                   </Nav.Link>
                   {/* <Button variant="primary" href="/login" > Sign Up </Button>{' '}
