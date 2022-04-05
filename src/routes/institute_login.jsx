@@ -53,7 +53,7 @@ export default function InstituteLogin() {
                         <hr style={{height: 3}} />
 
                         <Row className="text-center">
-                            <Nav.Link href="institute_login" style={{color: 'black'}} > Sign in as institute? </Nav.Link>
+                            <Nav.Link href="student_login" style={{color: 'black'}} > Sign in as student? </Nav.Link>
                         </Row>
 
                     </Form>

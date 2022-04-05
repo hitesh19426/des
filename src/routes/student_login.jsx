@@ -19,12 +19,10 @@ export default function StudentLoginPage(props) {
                         </Form.Group>
 
                         <Form.Group as={Col} className="mb-2 mx-5" controlId="formBasicEmail">
-                            {/* <Form.Label> Email address </Form.Label> */}
                             <Form.Control type="email" placeholder="Enter email" className="sz" />
                         </Form.Group>
 
                         <Form.Group as={Col} className="mb-3 mx-5" controlId="formBasicPassword">
-                            {/* <Form.Label> Password </Form.Label> */}
                             <Form.Control type="password" placeholder="Password" />
                         </Form.Group>
 

@@ -16,7 +16,6 @@ function InstituteListItem(props){
 }
 
 const institutes = [
-    // {title: 'Computer Science', count: 12, icon: <ComputerIcon sx={{fontSize:50}} color="primary" />}, 
     {serial: 1, name: 'National Institute of Technology', location: 'Chennai', }, 
     {serial: 2, name: 'National Institute of Technology', location: 'Allahabad', }, 
     {serial: 3, name: 'National Institute of Technology', location: 'Bhopal', }, 
@@ -37,22 +36,11 @@ export default function ConsortiumPartnersPage() {
                     <Nav.Link href="#browse_all"> Browse All </Nav.Link>
                 </Col>
             </Row>
-                <ListGroup>
-                    {/* <ListGroup.Item action variant="success" href="#link1">
-                        <Row>
-                            <Container className="col-8 align-self-center">National Instite of Technology, Delhi</Container>
-                            <Button className="col-2"> Admission Creteria </Button>
-                            <Button className="col-2" > Consortium Partners </Button>
-                        </Row>
-                    </ListGroup.Item> */}
-
-                    {institutes.map((institute) => 
-                        <InstituteListItem name={institute.name} location={institute.location} key={institute.serial} value={institute.serial} />
-                    )}
-                </ListGroup>
-            <Row>
-                
-            </Row>
+            <ListGroup>
+                {institutes.map((institute) => 
+                    <InstituteListItem name={institute.name} location={institute.location} key={institute.serial} value={institute.serial} />
+                )}
+            </ListGroup>
         </Col>
     </Container>
   )
