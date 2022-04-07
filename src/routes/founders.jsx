@@ -54,7 +54,7 @@ export default function FoundersPage() {
                     </Col>
                     <Col className="col6 col-md-3">
                         <Figure style={figureStyle}>
-                            <Figure.Image width="100%" alt="mukesh pic" src={hiteshpic} className="p-3" />
+                            <Figure.Image width="100%" alt="mukesh pic" src={placeholdermalepic} className="p-3" />
                             <Figure.Caption className="text-center"><strong> Frontend Developer </strong></Figure.Caption>
                             <Figure.Caption className="text-center"> Frontend Developer </Figure.Caption>
                         </Figure>
