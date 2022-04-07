@@ -3,7 +3,7 @@ import {Container, Col, Row, Form, Button} from 'react-bootstrap'
 
 export default function ContactPage() {
     return (
-        <Container>
+        <Container className="my-5">
             <Row> <h1> Contact Us </h1> </Row>
             <Row> <p> We are working continously to serve you in the best way! </p> </Row>
             <Row>

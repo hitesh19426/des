@@ -11,8 +11,8 @@ export default function FoundersPage() {
     return (
         <Container className="team" id="team">
             <Col>
-                <Row className="mt-5"> <h1> Results </h1> </Row>
-                <Row> <p> Based on your scores, these institutes offer you degrees! </p> </Row>
+                <Row className="mt-5"> <h1> Founders </h1> </Row>
+                <Row> <p> Meet the wonderful minds behind this project! </p> </Row>
                 {/* TODO:  Add image css in separate file */}
                 <Row>
                     <Col className="col6 col-md-3">
