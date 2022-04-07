@@ -24,21 +24,21 @@ export default function FoundersPage() {
                     </Col>
                     <Col className="col6 col-md-3">
                         <Figure style={figureStyle}>
-                            <Figure.Image width="100%" alt="mukesh pic" src={placeholdermalepic} className="p-3" />
+                            <Figure.Image width="100%" alt="Dr. Anuj Garg pic" src={placeholdermalepic} className="p-3" />
                             <Figure.Caption className="text-center"><strong> Dr. Anuj Garg </strong></Figure.Caption>
                             <Figure.Caption className="text-center"> Principal Researcher </Figure.Caption>
                         </Figure>
                     </Col>
                     <Col className="col6 col-md-3">
                         <Figure style={figureStyle}>
-                            <Figure.Image width="100%" alt="mukesh pic" src={prathampic} className="p-3" />
+                            <Figure.Image width="100%" alt="Pratham Gupta pic" src={prathampic} className="p-3" />
                             <Figure.Caption className="text-center"><strong> Pratham Gupta </strong></Figure.Caption>
                             <Figure.Caption className="text-center"> Blockchain Developer </Figure.Caption>
                         </Figure>
                     </Col>
                     <Col className="col6 col-md-3">
                         <Figure style={figureStyle}>
-                            <Figure.Image width="100%" alt="mukesh pic" src={placeholdermalepic} className="p-3" />
+                            <Figure.Image width="100%" alt="Sourabh Yadav Das pic" src={placeholdermalepic} className="p-3" />
                             <Figure.Caption className="text-center"><strong> Sourabh Yadav Das </strong></Figure.Caption>
                             <Figure.Caption className="text-center"> Blockchain Developer </Figure.Caption>
                         </Figure>
@@ -47,21 +47,21 @@ export default function FoundersPage() {
                 <Row>
                     <Col className="col6 col-md-3">
                         <Figure style={figureStyle}>
-                            <Figure.Image width="100%" alt="mukesh pic" src={piyushpic} className="p-3" />
+                            <Figure.Image width="100%" alt="piyush pic" src={piyushpic} className="p-3" />
                             <Figure.Caption className="text-center"><strong> Piyush Sharma </strong></Figure.Caption>
                             <Figure.Caption className="text-center"> Frontend Developer </Figure.Caption>
                         </Figure>
                     </Col>
                     <Col className="col6 col-md-3">
                         <Figure style={figureStyle}>
-                            <Figure.Image width="100%" alt="mukesh pic" src={placeholdermalepic} className="p-3" />
-                            <Figure.Caption className="text-center"><strong> Frontend Developer </strong></Figure.Caption>
+                            <Figure.Image width="100%" alt="hitesh pic" src={placeholdermalepic} className="p-3" />
+                            <Figure.Caption className="text-center"><strong> Hitesh Garg </strong></Figure.Caption>
                             <Figure.Caption className="text-center"> Frontend Developer </Figure.Caption>
                         </Figure>
                     </Col>
                     <Col className="col6 col-md-3">
                         <Figure style={figureStyle}>
-                            <Figure.Image width="100%" alt="mukesh pic" src={placeholderfemalepic} className="p-3" />
+                            <Figure.Image width="100%" alt="Gursimran Kaur pic" src={placeholderfemalepic} className="p-3" />
                             <Figure.Caption className="text-center"><strong> Gursimran Kaur </strong></Figure.Caption>
                             <Figure.Caption className="text-center"> PUndergraduate Researcher </Figure.Caption>
                         </Figure>
