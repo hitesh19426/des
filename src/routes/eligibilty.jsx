@@ -48,7 +48,7 @@ export default function EligibilityPage() {
                                     <Form.Control type="text" placeholder="Enter Class 12 marks" aria-describedby="class 12 marks"/>
                                 </Form.Group>
                             </Row>
-                            <Button className="text-center" as="a" href="#results"> Fetch Results </Button>
+                            <Button className="text-center" as="a" href="eligibility/results"> Fetch Results </Button>
                         </Form>
                     </Col>
                 </Row>
