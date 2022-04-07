@@ -3,7 +3,7 @@ import {Row, Col, Container, Form, Button, } from 'react-bootstrap'
 
 export default function EligibilityPage() {
     return (
-        <Container>
+        <Container className="my-5">
             <Col>
                 <Row> <h1> Eligibilty </h1> </Row>
                 <Row> <p> Find the perfect courses that meet your eligibilty </p> </Row> 

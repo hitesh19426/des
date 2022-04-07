@@ -11,9 +11,6 @@ export default function LayoutPage() {
         <Container>
             <MyNavBar />
             <Outlet />
-            <Founders />
-            <Contact />
-            <Footer />
         </Container>
     )
 }
