@@ -13,6 +13,7 @@ import InstituteLoginPage from './routes/institute_login'
 import InstituteSignupPage from './routes/institute_signup'
 import CoursesInstitutePage from './routes/courses_institute'
 import ConsortiumPartnersPage from './routes/consortium-partners'
+import AdmissionCreteriaPage from './routes/admission-creteria.jsx'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path = "courses" element = {<CoursesPage/>} />
             <Route path = "courses/institute" element = {<CoursesInstitutePage/>} />
               <Route path = "institute/consortium-partners" element = {<ConsortiumPartnersPage/>} />
+              <Route path = "institute/admission-creteria" element = {<AdmissionCreteriaPage/>} />
           <Route path = "founders" element = {<FoundersPage />} />
           <Route path = "contact" element = {<ContactPage/>} />
           <Route path = "student_login" element = {<StudentLoginPage />} />

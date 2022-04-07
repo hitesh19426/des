@@ -11,7 +11,7 @@ function InstituteListItem(props){
         <ListGroup.Item action style={{'backgroundColor': '#F6F6FF'}} onClick={() => console.log(props.value, 'function called')} >
             <Row>
                 <Container className="col-7 align-self-center">{props.name}, {props.location}</Container>
-                <Button className="col-2 " style={consortiumButtonStlye} > Admission Creteria </Button>
+                <Button className="col-2 " style={consortiumButtonStlye} href="/institute/admission-creteria"> Admission Creteria </Button>
                 <Button className="col-2 ms-2" style={consortiumButtonStlye} href="/institute/consortium-partners"> Consortium Partners </Button>
             </Row>
         </ListGroup.Item>

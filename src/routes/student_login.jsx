@@ -8,7 +8,7 @@ import {Form, Container, Button, Row, Col, Card, Nav} from 'react-bootstrap'
 export default function StudentLoginPage(props) {
     
     return (
-        <Card className="mt-5 mx-auto col-5" style={{'background-color': '#F6F6FF'}} >
+        <Card className="mt-5 mx-auto col-4" style={{'background-color': '#F6F6FF'}} >
             <Container className="">
                 <Col>
                     <Form className="mt-3 mb-3">
