@@ -1,13 +1,21 @@
 import React from 'react'
 import {Card, Form, Container, Col, Row, Button, Nav} from 'react-bootstrap'
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import GoogleIcon from '@mui/icons-material/Google';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
-export default function InstituteSignupPage() {
+export default function InstituteSignupPage(){
+    return (
+        <Container>
+            <InstituteSignupCard />
+        </Container>
+    )
+}
+
+function InstituteSignupCard() {
   return (
-    <Card className="mt-5 mx-auto col-4" style={{'background-color': '#F6F6FF'}} >
-      <Container className="">
+      <Card className="mt-5 mx-auto col-4" style={{'background-color': '#F6F6FF'}}>
           <Col>
               <Form className="mt-3 mb-3">
                   <Form.Group as={Col} className="text-center" controlId="">
@@ -37,7 +45,7 @@ export default function InstituteSignupPage() {
                   </Form.Group>
 
                   <Row className="mx-5">
-                      <Button className="" variant="success" type="submit"> Sign Up </Button>
+                      <Button className="" variant="success" type="submit"  href="/institute/profile"> Sign Up </Button>
                   </Row>
                   
                   <hr style={{height: 3}} />
@@ -62,7 +70,6 @@ export default function InstituteSignupPage() {
 
               </Form>
           </Col>
-      </Container>
-  </Card>
+      </Card>
   )
 }

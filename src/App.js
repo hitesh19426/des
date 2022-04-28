@@ -15,6 +15,12 @@ import CoursesInstitutePage from './routes/courses_institute'
 import ConsortiumPartnersPage from './routes/consortium-partners'
 import AdmissionCreteriaPage from './routes/admission-creteria.jsx'
 import EligibilityResultsPage from './routes/eligibility-results.jsx'
+import InstituteProfilePage from './routes/institute/profile.jsx'
+import InstitueAnalysisPage from './routes/institute/analysis.jsx'
+import InstitueCoursesPage from './routes/institute/courses.jsx'
+import InstitueCreteriasPage from './routes/institute/creterias.jsx'
+import InstitueFacultyPage from './routes/institute/faculty.jsx'
+import InstitueStudentsPage from './routes/institute/students.jsx'
 
 function App() {
   return (
@@ -35,6 +41,13 @@ function App() {
           <Route path = "institute_login" element = {<InstituteLoginPage />} />
           <Route path = "student_signup" element = {<StudentSignupPage/>} />
           <Route path = "institute_signup" element = {<InstituteSignupPage/>} />
+            
+            <Route path = "institute/profile" element = {<InstituteProfilePage/>} />
+            <Route path = "institute/analysis" element = {<InstitueAnalysisPage/>} />
+            <Route path = "institute/creterias" element = {<InstitueCreteriasPage/>} />
+            <Route path = "institute/students" element = {<InstitueStudentsPage/>} />
+            <Route path = "institute/faculty" element = {<InstitueFacultyPage/>} />
+            <Route path = "institute/courses" element = {<InstitueCoursesPage/>} />
         </Route>
       </Routes>
     </BrowserRouter>
