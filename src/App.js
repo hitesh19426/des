@@ -21,6 +21,15 @@ import InstitueCoursesPage from './routes/institute/courses.jsx'
 import InstitueCreteriasPage from './routes/institute/creterias.jsx'
 import InstitueFacultyPage from './routes/institute/faculty.jsx'
 import InstitueStudentsPage from './routes/institute/students.jsx'
+import InstituteAdmissionCreteriaPage from './routes/institute/admission-creteria.jsx'
+import InstituteDropoutCreteriaPage from './routes/institute/dropout-creteria.jsx'
+import InstituteDegreeCreteriaPage from './routes/institute/degree-creteria.jsx'
+import InstituteHostChangeCreteriaPage from './routes/institute/host-change-creteria.jsx'
+
+import HostChangeForm from './routes/institute/host-change-form.jsx'
+import AdmissionForm from './routes/institute/admission-form.jsx'
+import DegreeForm from './routes/institute/degree-form.jsx'
+import DropoutForm from './routes/institute/dropout-form.jsx'
 
 function App() {
   return (
@@ -41,10 +50,21 @@ function App() {
           <Route path = "institute_login" element = {<InstituteLoginPage />} />
           <Route path = "student_signup" element = {<StudentSignupPage/>} />
           <Route path = "institute_signup" element = {<InstituteSignupPage/>} />
-            
+
             <Route path = "institute/profile" element = {<InstituteProfilePage/>} />
             <Route path = "institute/analysis" element = {<InstitueAnalysisPage/>} />
             <Route path = "institute/creterias" element = {<InstitueCreteriasPage/>} />
+              <Route path = "institute/creterias/host-change-creteria" element = {<InstituteHostChangeCreteriaPage/>} />
+              <Route path = "institute/creterias/host-change-creteria/host-change-form" element = {<HostChangeForm/>} />
+
+              <Route path = "institute/creterias/admission-creteria" element = {<InstituteAdmissionCreteriaPage />} />
+              <Route path = "institute/creterias/admission-creteria/admission-form" element = {<AdmissionForm />} />
+
+              <Route path = "institute/creterias/dropout-creteria" element = {<InstituteDropoutCreteriaPage/>} />
+              <Route path = "institute/creterias/dropout-creteria/dropout-form" element = {<DropoutForm/>} />
+              
+              <Route path = "institute/creterias/degree-creteria" element = {<InstituteDegreeCreteriaPage/>} />
+              <Route path = "institute/creterias/degree-creteria/degree-form" element = {<DegreeForm/>} />
             <Route path = "institute/students" element = {<InstitueStudentsPage/>} />
             <Route path = "institute/faculty" element = {<InstitueFacultyPage/>} />
             <Route path = "institute/courses" element = {<InstitueCoursesPage/>} />
