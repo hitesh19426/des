@@ -65,7 +65,7 @@ export default function DropoutDegree() {
                                 </Select>
                             </FormControl>
 
-                            <Button variant="contained" href="creterias/host-change-creteria" sx={{ mt: 3}} > Submit </Button>
+                            <Button variant="contained" href="dropout-creteria/dropout-form" sx={{ mt: 3}} > Submit </Button>
                         </Grid>
                     </Grid>
                     <Grid item xs={4} >

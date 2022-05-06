@@ -22,14 +22,24 @@ import InstitueCreteriasPage from './routes/institute/creterias.jsx'
 import InstitueFacultyPage from './routes/institute/faculty.jsx'
 import InstitueStudentsPage from './routes/institute/students.jsx'
 import InstituteAdmissionCreteriaPage from './routes/institute/admission-creteria.jsx'
-import InstituteDropoutCreteriaPage from './routes/institute/dropout-creteria.jsx'
+import InstituteDropoutAskPage from './routes/institute/dropout-ask.jsx'
 import InstituteDegreeCreteriaPage from './routes/institute/degree-creteria.jsx'
 import InstituteHostChangeCreteriaPage from './routes/institute/host-change-creteria.jsx'
 
 import HostChangeForm from './routes/institute/host-change-form.jsx'
 import AdmissionForm from './routes/institute/admission-form.jsx'
+import DropoutCreteria from './routes/institute/dropout-creteria.jsx'
 import DegreeForm from './routes/institute/degree-form.jsx'
 import DropoutForm from './routes/institute/dropout-form.jsx'
+
+import HostECEthanks from './routes/institute/host-thanks.jsx'
+import HostECETable from './routes/institute/host-ece-table.jsx'
+import AdmissionMEthanks from './routes/institute/admission-thanks.jsx'
+import AdmissionTable from './routes/institute/admission-table.jsx'
+import DegreeThanks from './routes/institute/degree-thanks.jsx'
+import DegreeTable from './routes/institute/degree-table.jsx'
+import DropoutThanks from './routes/institute/dropout-thanks.jsx'
+import DropoutTable from './routes/institute/dropout-table.jsx'
 
 function App() {
   return (
@@ -37,6 +47,7 @@ function App() {
       <Routes>
         <Route path = "/" element = {<LayoutPage/>}>
           <Route index element={<HomePage />} />
+          
           <Route path = "about" element = {<AboutPage/>} />
           <Route path = "eligibility" element = {<EligibilityPage />} />
             <Route path = "eligibility/results" element = {<EligibilityResultsPage />} />
@@ -58,9 +69,10 @@ function App() {
               <Route path = "institute/creterias/host-change-creteria/host-change-form" element = {<HostChangeForm/>} />
 
               <Route path = "institute/creterias/admission-creteria" element = {<InstituteAdmissionCreteriaPage />} />
-              <Route path = "institute/creterias/admission-creteria/admission-form" element = {<AdmissionForm />} />
+              <Route path = "institute/creterias/admission-creteria/admission-creteria-form" element = {<AdmissionForm />} />
 
-              <Route path = "institute/creterias/dropout-creteria" element = {<InstituteDropoutCreteriaPage/>} />
+              <Route path = "institute/creterias/dropout-ask" element = {<InstituteDropoutAskPage/>} />
+              <Route path = "institute/creterias/dropout-creteria" element = {<DropoutCreteria/>} />
               <Route path = "institute/creterias/dropout-creteria/dropout-form" element = {<DropoutForm/>} />
               
               <Route path = "institute/creterias/degree-creteria" element = {<InstituteDegreeCreteriaPage/>} />
@@ -68,6 +80,16 @@ function App() {
             <Route path = "institute/students" element = {<InstitueStudentsPage/>} />
             <Route path = "institute/faculty" element = {<InstitueFacultyPage/>} />
             <Route path = "institute/courses" element = {<InstitueCoursesPage/>} />
+          
+          <Route path = "/dropoutThanks" element = {<DropoutThanks />} />
+          <Route path = "/dropoutTable" element = {<DropoutTable/>} />
+          <Route path = "/degreeThanks" element = {<DegreeThanks />} />
+          <Route path = "/degreeTable" element = {<DegreeTable/>} />
+          <Route path="/hostECEthanks" element = {<HostECEthanks/>} />
+          <Route path="/hostECEtable" element = {<HostECETable />} />
+          <Route path="/admissionMEthanks" element = {<AdmissionMEthanks />} />
+          <Route path="/admissionMEtable" element = {<AdmissionTable />} />
+
         </Route>
       </Routes>
     </BrowserRouter>

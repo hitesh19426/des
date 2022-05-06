@@ -30,12 +30,21 @@ export default function InstitueCreteriasPage() {
         <SideDrawer />
         <Box component="main" sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }} >
             <Grid container spacing={2} columns={16} padding={5}>
-                <ButtonGroup orientation="vertical" aria-label="vertical contained button group" variant="contained">
-                    <Button key="one" href="creterias/host-change-creteria" > Host Change Creteria </Button>
-                    <Button key="two" href="creterias/admission-creteria"> Admission Creteria </Button>
-                    <Button key="three" href="creterias/dropout-ask"> Dropout Creteria </Button>
-                    <Button key="three" href="creterias/degree-creteria"> Degree Creteria </Button>
-                </ButtonGroup>
+            <div class="container">
+                <h1 class="text-center">Dropout Criteria</h1>
+
+                <p>Will you provide a diploma for dropout students?</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                    <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
+                    <label class="form-check-label" for="inlineCheckbox2">No</label>
+                </div>
+                <br />
+                <a href="dropout-creteria" class="btn btn-primary my-3">Submit</a>
+            </div>
             </Grid>
         </Box>
     </Box>

@@ -42,38 +42,51 @@ export default function HostChangeCreteriaPage() {
             </AppBar>
             <SideDrawer />
             <Box component="main" sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }} >
-                <Grid item container spacing={3} xs={8}>
-                    <Grid item>
-                        <Typography variant="h4" component="h1"> Host Change Form </Typography>
-                    </Grid>
-                    <Grid item sx={{minWidth: 440}} >
-                        <TextField id="outlined-basic" fullWidth label="Program name" variant="outlined" />
-                    </Grid>
-                    <Grid item sx={{minWidth: 440}} >
-                        <TextField id="outlined-basic" fullWidth label="Stream name" variant="outlined" />
-                    </Grid>
-                    <Grid item sx={{minWidth: 440}} >
-                        <TextField id="outlined-basic" fullWidth label="Semester" variant="outlined" />
-                    </Grid>
-                    <Grid item sx={{minWidth: 440}} >
-                        <TextField id="outlined-basic" fullWidth label="Minimum credits from current host institute" variant="outlined" />
-                    </Grid>
-                    <Grid item sx={{minWidth: 440}} >
-                        <TextField id="outlined-basic" fullWidth label="Maximum credits from online courses" variant="outlined" />
-                    </Grid>
-                    <Grid item sx={{minWidth: 440}} >
-                        <TextField id="outlined-basic" fullWidth label="Minimum cumulative grade point" variant="outlined" />
-                    </Grid>
-                    <Grid item sx={{minWidth: 440}} >
-                        <TextField id="outlined-basic" fullWidth label="Allowed streams" variant="outlined" />
-                    </Grid>
-                    <Grid item sx={{minWidth: 440}} >
-                        <TextField id="outlined-basic" fullWidth label="Mandatory courses" variant="outlined" />
-                    </Grid>
-                    <Grid item container sx={{minWidth: 440}} >
-                        <Button variant="contained" href="#" > Submit </Button>
-                    </Grid>
-                </Grid>
+                <div class="container">
+                    <h1 class="text-center">Host Change Criteria</h1>
+                    <form>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Program name</label>
+                            <input type="text" placeholder="Bachelor of Technology" class="form-control" id=""
+                                aria-describedby="emailHelp" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Stream name</label>
+                            <input type="text" placeholder="Electrical and Electronics" class="form-control" id=""
+                                aria-describedby="emailHelp" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Semester</label>
+                            <input type="text" placeholder="II" class="form-control" id="" aria-describedby="emailHelp" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Minimum credits from current host institute</label>
+                            <input type="text" class="form-control" id="" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Minimum credits from proposed host institute</label>
+                            <input type="text" class="form-control" id="" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Maximum credits from online courses</label>
+                            <input type="text" class="form-control" id="" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Minimum cumulative grade point</label>
+                            <input type="text" class="form-control" id="" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Allowed streams</label>
+                            <input type="text" class="form-control" id="" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Mandatory courses</label>
+                            <input type="text" class="form-control" id="" />
+                        </div>
+
+                        <a href="/hostECEthanks" class="btn btn-primary my-3">Submit</a>
+                    </form>
+                </div>
             </Box>
         </Box>
     );

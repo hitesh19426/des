@@ -66,7 +66,7 @@ export default function DegreeCreteriaPage() {
                             </Select>
                         </FormControl>
 
-                        <Button variant="contained" href="creterias/host-change-creteria" sx={{ mt: 3}} > Submit </Button>
+                        <Button variant="contained" href="degree-creteria/degree-form" sx={{ mt: 3}} > Submit </Button>
                     </Grid>
                 </Grid>
                 <Grid item xs={4} >

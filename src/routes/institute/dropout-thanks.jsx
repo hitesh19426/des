@@ -42,38 +42,16 @@ export default function HostChangeCreteriaPage() {
             <SideDrawer />
             <Box component="main" sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }} >
                 <Grid item container >
-                    <div class="container">
+                    <div class="container"> 
                         <h1 class="text-center">Dropout Criteria</h1>
 
-                        <form>
-                            <div class="mb-3">
-                                <label for="" class="form-label">Program name</label>
-                                <input type="text" value="Dipolma in Computer Science" class="form-control" id=""
-                                    aria-describedby="emailHelp" />
-                            </div>
-                            <div class="mb-3">
-                                <label for="" class="form-label">Minimum credits for awarding diploma</label>
-                                <input type="text" class="form-control" id="" />
-                            </div>
-                            <div class="mb-3">
-                                <label for="" class="form-label">Minimum credits from host institute</label>
-                                <input type="text" class="form-control" id="" />
-                            </div>
-                            <div class="mb-3">
-                                <label for="" class="form-label">Maximum credits from online courses</label>
-                                <input type="text" class="form-control" id="" />
-                            </div>
-                            <div class="mb-3">
-                                <label for="" class="form-label">Mandatory courses from host</label>
-                                <input type="text" class="form-control" id="" />
-                            </div>
-                            <div class="mb-3">
-                                <label for="" class="form-label">Others</label>
-                                <input type="text" class="form-control" id="" />
-                            </div>
+                        <p>
+                            The criteria has been updated.
+                            <br />
+                            Thank you for your request
+                        </p>
 
-                            <a href="/dropoutThanks" class="btn btn-primary my-3">Submit</a>
-                        </form>
+                        <a href="/dropoutTable" class="btn btn-primary my-3">View</a>
 
                     </div>
                 </Grid>

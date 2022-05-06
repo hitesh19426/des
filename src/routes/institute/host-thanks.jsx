@@ -12,6 +12,7 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import TextField from '@mui/material/TextField';
 
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
@@ -41,40 +42,16 @@ export default function HostChangeCreteriaPage() {
             </AppBar>
             <SideDrawer />
             <Box component="main" sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }} >
-                
                 <div class="container">
-                    <h1 class="text-center">Degree Award Criteria</h1>
+                    <h1 class="text-center">Host Change Criteria</h1>
 
-                    <form>
-                        <div class="mb-3">
-                            <label for="" class="form-label">Program name</label>
-                            <input type="text" placeholder="Computer Science" class="form-control" id=""
-                                aria-describedby="emailHelp" />
-                        </div>
-                        <div class="mb-3">
-                            <label for="" class="form-label">Minimum credits for awarding degree</label>
-                            <input type="text" class="form-control" id="" />
-                        </div>
-                        <div class="mb-3">
-                            <label for="" class="form-label">Minimum credits from host institute</label>
-                            <input type="text" class="form-control" id="" />
-                        </div>
-                        <div class="mb-3">
-                            <label for="" class="form-label">Maximum credits from online courses</label>
-                            <input type="text" class="form-control" id="" />
-                        </div>
-                        <div class="mb-3">
-                            <label for="" class="form-label">Mandatory courses from host</label>
-                            <input type="text" class="form-control" id="" />
-                        </div>
-                        <div class="mb-3">
-                            <label for="" class="form-label">Others</label>
-                            <input type="text" class="form-control" id="" />
-                        </div>
+                    <p>
+                        The criteria has been updated.
+                        <br />
+                        Thank you for your request
+                    </p>
 
-                        <a href="/degreeThanks" class="btn btn-primary my-3">Submit</a>
-                    </form>
-
+                    <a href="/hostECEtable" class="btn btn-primary my-3">View</a>
                 </div>
             </Box>
         </Box>
