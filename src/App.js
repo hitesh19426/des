@@ -15,12 +15,14 @@ import CoursesInstitutePage from './routes/courses_institute'
 import ConsortiumPartnersPage from './routes/consortium-partners'
 import AdmissionCreteriaPage from './routes/admission-creteria.jsx'
 import EligibilityResultsPage from './routes/eligibility-results.jsx'
+
 import InstituteProfilePage from './routes/institute/profile.jsx'
 import InstitueAnalysisPage from './routes/institute/analysis.jsx'
 import InstitueCoursesPage from './routes/institute/courses.jsx'
-import InstitueCreteriasPage from './routes/institute/creterias.jsx'
+import InstituteCreteriasPage from './routes/institute/creterias.jsx'
 import InstitueFacultyPage from './routes/institute/faculty.jsx'
 import InstitueStudentsPage from './routes/institute/students.jsx'
+
 import InstituteAdmissionCreteriaPage from './routes/institute/admission-creteria.jsx'
 import InstituteDropoutAskPage from './routes/institute/dropout-ask.jsx'
 import InstituteDegreeCreteriaPage from './routes/institute/degree-creteria.jsx'
@@ -64,7 +66,7 @@ function App() {
 
             <Route path = "institute/profile" element = {<InstituteProfilePage/>} />
             <Route path = "institute/analysis" element = {<InstitueAnalysisPage/>} />
-            <Route path = "institute/creterias" element = {<InstitueCreteriasPage/>} />
+            <Route path = "institute/creterias" element = {<InstituteCreteriasPage/>} />
               <Route path = "institute/creterias/host-change-creteria" element = {<InstituteHostChangeCreteriaPage/>} />
               <Route path = "institute/creterias/host-change-creteria/host-change-form" element = {<HostChangeForm/>} />
 
