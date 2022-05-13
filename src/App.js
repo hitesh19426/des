@@ -117,7 +117,6 @@ function App() {
           <Route path="/courselist" element = {<Courselist/>} />
           <Route path="/dashboard" element = {<Dashboard/>} />
           <Route path="/dashboardNew" element ={<DashboardNew/>} />
-          <Route path="/degree" element = {<DashboardNew />} />
           <Route path="/degree" element = {<Degree/>} />
           <Route path="/degree2" element = {<Degree2/>} />
           <Route path="/degree3" element = {<Degree3/>} />

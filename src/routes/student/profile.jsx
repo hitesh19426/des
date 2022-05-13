@@ -1,40 +1,37 @@
 import React from 'react'
 import profileimage from './hitesh.jpg'
 
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+import Avatar from '@mui/material/Avatar';
+import AppBar from '@mui/material/AppBar';
+import CssBaseline from '@mui/material/CssBaseline';
+import List from '@mui/material/List';
+import Typography from '@mui/material/Typography';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemText from '@mui/material/ListItemText';
+import InboxIcon from '@mui/icons-material/MoveToInbox';
+import SideDrawer from './side-drawer'
+
+
 export default function profile() {
   return (
-    <body>
-    <div class="row">
-        <div class="col-2">
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href="">Student</a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-
-                <li><a href="/dashboard">Dashboard</a></li>
-                <li><a href="/profile">Profile</a></li>
-                <li><a href="/courselist">Course List</a></li>
-                <li><a href="/grades">Grades</a></li>
-                <li><a href="/consortiumInstitiute">Consortium Institutes</a></li>
-                <li><a href="/register">Course Registration</a></li>
-                <li><a href="/dropout">Dropout</a></li>
-                <li><a href="/degree">Degree</a></li>
-                <li><a href="/hostchange">Host Change</a></li>
-
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a>Logout</li>
-                <li><a href=""></a></li>
-            </ul>
-        </div>
-        <div class="col-9 main">
+    <Box sx={{ display: 'flex' }}>
+        <CssBaseline />
+        <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
+            <List>
+                <ListItemButton component="a" href="">
+                <ListItemIcon> <InboxIcon /> </ListItemIcon>
+                <ListItemText primary='Student' />
+                </ListItemButton>
+            </List>
+        </AppBar>
+        <SideDrawer />
+        <Box component="main" sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }} >
             <div class="row">
                 <div class="col-4">
-                    <img src={profileimage} alt="" />
+                    <img src={profileimage} alt="" width="100%" />
                 </div>
                 <div class="col-8">
                     <h1>Hitesh Garg</h1>
@@ -87,17 +84,11 @@ export default function profile() {
                                 <td>Phone Number</td>
                                 <td>9876543210</td>
                             </tr>
-
                         </tbody>
                     </table>
                 </div>
             </div>
-        </div>
-        <div class="col-1">
-
-        </div>
-    </div>
-
-</body>
+        </Box>
+    </Box>
   )
 }
