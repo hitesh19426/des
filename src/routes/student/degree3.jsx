@@ -29,8 +29,8 @@ export default function degree3() {
         <SideDrawer />
         <Box component="main" sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }} >
             <div class="row">
-                <h2 class="text-center mt-5">Degree</h2>
-                <table class="table table-borderless mt-5">
+                <h2 class="text-center mt-1">Degree</h2>
+                <table class="table table-borderless mt-1">
                     <thead>
                         <tr class="table-row">
                             <th scope="col">Field Name</th>
@@ -73,8 +73,8 @@ export default function degree3() {
                     </tbody>
                 </table>
                 <div class="d-flex flex-column justify-content-center align-items-center">
-                    <p class="mt-5">You have not fulfilled the degree criteria for your host institute</p>
-                    <a href="/degree2" class="mb-5 btn btn-primary">Back</a>
+                    <p class="mt-4">You have not fulfilled the degree criteria for your host institute</p>
+                    <a href="/degree2" class="mb-2 btn btn-primary">Back</a>
                 </div>
             </div>
         </Box>

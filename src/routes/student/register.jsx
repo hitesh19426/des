@@ -13,6 +13,7 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import SideDrawer from './side-drawer'
 import profile_pic from './hitesh.jpg'
+import { Accordion, Row, Button, Col } from 'react-bootstrap';
 
 export default function register() {
   return (
@@ -28,92 +29,71 @@ export default function register() {
         </AppBar>
         <SideDrawer />
         <Box component="main" sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }} >
-            <div class="row">
-                <div class="accordion mt-5" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                <a href="#" id="submit" class="btn btn-primary">Fetch Courses</a>
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
+            <Col>
+                <Accordion as="Row" id="accordionExample">
+                    <Accordion.Item eventKey="1">
+                        <Accordion.Header id="headingOne"> Fetch Courses </Accordion.Header>
+                        <Accordion.Body id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div>
                                 <ul>
                                     <li>
                                         Digital Circuits - MSIT-D
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckDefault" />
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                                Select course
-                                            </label>
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                            <label class="form-check-label" for="flexCheckDefault"> Select course </label>
                                         </div>
                                     </li>
 
                                     <li>
                                         Database Management System - DTU-D
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckDefault" />
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                                Select course
-                                            </label>
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                            <label class="form-check-label" for="flexCheckDefault"> Select course </label>
                                         </div>
                                     </li>
 
                                     <li>
                                         Big Data Analytics - IIT-D
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckDefault" />
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                                Select course
-                                            </label>
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                            <label class="form-check-label" for="flexCheckDefault"> Select course </label>
                                         </div>
                                     </li>
 
                                     <li>
                                         Blockchain and Cryptocurrency - NSIT-D
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckDefault" />
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                                Select course
-                                            </label>
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                            <label class="form-check-label" for="flexCheckDefault"> Select course </label>
                                         </div>
                                     </li>
 
                                     <li>
                                         Big Data Mining - IIT-D
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckDefault" />
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                                Select course
-                                            </label>
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                            <label class="form-check-label" for="flexCheckDefault"> Select course </label>
                                         </div>
                                     </li>
 
                                     <li>
                                         Cryptocurrency and Cybersecurity - NSIT-D
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckDefault" />
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                                Select course
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                            <label class="form-check-label" for="flexCheckDefault"> Select course
                                             </label>
                                         </div>
                                     </li>
 
                                 </ul>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="/savedCourses" id="submit" class="btn btn-primary">Save Courses</a>
-            </div>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                </Accordion>
+                <Row className="align-self-center">
+                    <Button href="/savedCourses" className="mt-3" id="submit"> Save Courses </Button>
+                </Row>
+            </Col>
         </Box>
     </Box>
   )

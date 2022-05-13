@@ -1,5 +1,4 @@
 import React from 'react'
-import applycss from './apply.css'
 
 export default function Apply(){
     return (

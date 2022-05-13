@@ -29,9 +29,9 @@ export default function degree4() {
         <SideDrawer />
         <Box component="main" sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }} >
             <div class="row">
-                <h2 class="text-center mt-5">Degree</h2>
-                <p class="text-center mt-3">Select a host for which you want to check your degree criteria</p>
-                <table class="table table-borderless mt-5">
+                <h2 class="text-center mt-2">Degree</h2>
+                <p class="text-center mt-2">Select a host for which you want to check your degree criteria</p>
+                <table class="table table-borderless mt-2">
                     <thead>
                         <tr class="table-row">
                             <th scope="col">Institute</th>

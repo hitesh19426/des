@@ -32,9 +32,9 @@ export default function dashboard() {
         <SideDrawer />
         <Box component="main" sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }} >
             <div class="row">
-                <div class="col-8 mt-4">
-                    <img src={welcome} alt="" sx={{width: 120, height: 120, borderRadius: 0}} />
-                    <div class="box">
+                <div class="col-8 mt-1">
+                    <img src={welcome} alt="" />
+                    <div class="box mt-3">
                         <p>
                             Dear Hitesh, <br />
                             You have not taken addmission in any institute. <br />
@@ -42,7 +42,7 @@ export default function dashboard() {
                         </p>
                     </div>
                 </div>
-                <div class="col-4 mt-4 d-flex justify-content-end sidebar">
+                <div class="col-4 mt-1 d-flex justify-content-end">
                     <img src={calendar} alt="" />
                 </div>
             </div>

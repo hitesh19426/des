@@ -14,6 +14,7 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import SideDrawer from './side-drawer'
 import profile_pic from './hitesh.jpg'
+import { Accordion, Row } from 'react-bootstrap';
 
 export default function savedCourses() {
   return (
@@ -29,18 +30,12 @@ export default function savedCourses() {
         </AppBar>
         <SideDrawer />
         <Box component="main" sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }} >
-            <div class="row">
-                <div class="accordion mt-5" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <a href="#" id="submit" class="btn btn-primary">Saved Courses</a>
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse show collapse" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
+            <Row>
+                <Accordion defaultActiveKey="0">
+                    <Accordion.Item eventKey="1">
+                        <Accordion.Header id="headingOne"> Saved Courses </Accordion.Header>
+                        <Accordion.Body id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div >
                                 <ul>
                                     <li>
                                         Digital Circuits <br />
@@ -60,10 +55,10 @@ export default function savedCourses() {
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                </Accordion>
+            </Row>
         </Box>
     </Box>
   )

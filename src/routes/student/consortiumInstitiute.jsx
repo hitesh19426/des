@@ -13,6 +13,7 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import SideDrawer from './side-drawer'
 import profile_pic from './hitesh.jpg'
+import { Accordion, Row } from 'react-bootstrap';
 
 export default function consortiumInstitiute() {
   return (
@@ -28,91 +29,66 @@ export default function consortiumInstitiute() {
         </AppBar>
         <SideDrawer />
         <Box component="main" sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }} >
-            <div class="row">
-                <div class="accordion mt-5" id="accordionExample">
-                    
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                National Institute of Technology, Delhi (NIT-D)
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li><a href="">View criteria for host change</a></li>
-                                    <li><a href="">View criteria for drop out</a></li>
-                                    <li><a href="">View criteria for degree </a></li>
-                                    <li><a href="">View courses</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            <Row>
+                <Accordion>
+                    <Accordion.Item eventKey="1">
+                        <Accordion.Header id="headingOne">
+                            National Institute of Technology, Delhi (NIT-D)
+                        </Accordion.Header>
+                        <Accordion.Body id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <ul>
+                                <li><a href="">View criteria for host change</a></li>
+                                <li><a href="">View criteria for drop out</a></li>
+                                <li><a href="">View criteria for degree </a></li>
+                                <li><a href="">View courses</a></li>
+                            </ul>
+                        </Accordion.Body>
+                    </Accordion.Item>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Indian Institute of Technology, Delhi (IIT-D)
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li><a href="">View criteria for host change</a></li>
-                                    <li><a href="">View criteria for drop out</a></li>
-                                    <li><a href="">View criteria for degree </a></li>
-                                    <li><a href="">View courses</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <Accordion.Item eventKey="2">
+                        <Accordion.Header id="headingTwo">
+                            Indian Institute of Technology, Delhi (IIT-D)
+                        </Accordion.Header>
+                        <Accordion.Body id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <ul>
+                                <li><a href="">View criteria for host change</a></li>
+                                <li><a href="">View criteria for drop out</a></li>
+                                <li><a href="">View criteria for degree </a></li>
+                                <li><a href="">View courses</a></li>
+                            </ul>
+                        </Accordion.Body>
+                    </Accordion.Item>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Maharaja Surajmal Institute of Technology, Delhi (MSIT-D)
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li><a href="">View criteria for host change</a></li>
-                                    <li><a href="">View criteria for drop out</a></li>
-                                    <li><a href="">View criteria for degree </a></li>
-                                    <li><a href="">View courses</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <Accordion.Item eventKey="3">
+                        <Accordion.Header id="headingThree">
+                            Maharaja Surajmal Institute of Technology, Delhi (MSIT-D)
+                        </Accordion.Header>
+                        <Accordion.Body id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <ul>
+                                <li><a href="">View criteria for host change</a></li>
+                                <li><a href="">View criteria for drop out</a></li>
+                                <li><a href="">View criteria for degree </a></li>
+                                <li><a href="">View courses</a></li>
+                            </ul>
+                        </Accordion.Body>
+                    </Accordion.Item>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="heading4">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                Indraprastha Institute of Information Technology, Delhi (IIIT-D)
-                            </button>
-                        </h2>
-                        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li><a href="">View criteria for host change</a></li>
-                                    <li><a href="">View criteria for drop out</a></li>
-                                    <li><a href="">View criteria for degree </a></li>
-                                    <li><a href="">View courses</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <Accordion.Item eventKey="4">
+                        <Accordion.Header id="heading4">
+                            Indraprastha Institute of Information Technology, Delhi (IIIT-D)
+                        </Accordion.Header>
+                        <Accordion.Body id="collapse4" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+                            <ul>
+                                <li><a href="">View criteria for host change</a></li>
+                                <li><a href="">View criteria for drop out</a></li>
+                                <li><a href="">View criteria for degree </a></li>
+                                <li><a href="">View courses</a></li>
+                            </ul>
+                        </Accordion.Body>
+                    </Accordion.Item>
 
-                </div>
-            </div>
+                </Accordion>
+            </Row>
         </Box>
     </Box>
   )

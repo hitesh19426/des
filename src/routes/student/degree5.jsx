@@ -29,9 +29,9 @@ export default function degree5() {
         <SideDrawer />
         <Box component="main" sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }} >
             <div class="row">
-                <h2 class="text-center mt-5">Degree</h2>
-                <h6 class="text-center mt-3 mb-5">Indian Institute of Technology, Delhi</h6>
-                <table class="table table-borderless mt-5">
+                <h2 class="text-center mt-2 h2">Degree</h2>
+                <h6 class="text-center h5">Indian Institute of Technology, Delhi</h6>
+                <table class="table table-borderless mt-3">
                     <thead>
                         <tr class="table-row">
                             <th scope="col">Field Name</th>

@@ -29,13 +29,13 @@ export default function degree2() {
         <SideDrawer />
         <Box component="main" sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }} >
             <div class="row text-center">
-                <h2 class="mt-5">Degree</h2>
-                <h6 class="mt-5">Do you want to see your degree status with your current host?</h6>
+                <h2 class="mt-2">Degree</h2>
+                <h6 class="mt-2">Do you want to see your degree status with your current host?</h6>
                 <h6 class="">Do you want to see your degree status with different host?</h6>
-                <h6 class="mb-5">Please select the required option</h6>
+                <h6 class="mb-2">Please select the required option</h6>
                 <div class="buttons d-flex flex-row justify-content-center">
                     <a href="/degree3" class="btn btn-primary">Current</a>
-                    <a href="/degree4" class="btn btn-primary">Host Change</a>
+                    <a href="/degree4" class="btn btn-primary mx-3">Host Change</a>
                     <a href="/degree" class="btn btn-primary">Cancel</a>
                 </div>
             </div>

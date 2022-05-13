@@ -29,11 +29,11 @@ export default function degree6() {
         <SideDrawer />
         <Box component="main" sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }} >
             <div class="row text-center">
-                <h2 class="mt-5">Degree</h2>
-                <h6 class="mt-5">You have completed all the requirements for the degree of IIT Delhi</h6>
+                <h2 class="mt-2">Degree</h2>
+                <h6 class="mt-4">You have completed all the requirements for the degree of IIT Delhi</h6>
                 <h6 class="">Do you wish to get the degree?</h6>
                 <div class="buttons d-flex flex-row justify-content-center">
-                    <a href="/degree7" class="btn btn-primary">Yes</a>
+                    <a href="/degree7" class="btn btn-primary me-3">Yes</a>
                     <a href="/degree" class="btn btn-primary">No</a>
                 </div>
             </div>
