@@ -62,7 +62,7 @@ export default function SideDrawer() {
               <ListItemIcon> <InboxIcon /> </ListItemIcon>
               <ListItemText primary='Degree' />
             </ListItemButton>
-            <ListItemButton component="a" href="/hostchange">
+            <ListItemButton component="a" href="/hc">
               <ListItemIcon> <InboxIcon /> </ListItemIcon>
               <ListItemText primary='Host Change' />
             </ListItemButton>

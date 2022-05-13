@@ -11,9 +11,9 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
-import SideDrawer from './side-drawer'
+import SideDrawer from './../side-drawer'
 
-export default function degree() {
+export default function hc_np() {
   return (
     <Box sx={{ display: 'flex' }}>
         <CssBaseline />
@@ -28,11 +28,10 @@ export default function degree() {
         <SideDrawer />
         <Box component="main" sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }} >
             <div class="row text-center">
-                <h2 class="mt-2">Degree</h2>
-                <h6 class="mt-2">Do you want to see your current degree status?</h6>
+                <h2 class="mt-2">Host Change</h2>
+                <h6 class="mt-2">National Institute of Technology, Delhi does not allow host change from your branch to Electonics branch.</h6>
                 <div class="buttons d-flex flex-row justify-content-center">
-                    <a href="/degree2" class="btn btn-primary me-3"> Yes </a>
-                    <a href="/dashboardNew" class="btn btn-primary"> No </a>
+                    <a href="/hc_institute" class="btn btn-primary me-3"> Back </a>
                 </div>
             </div>
         </Box>

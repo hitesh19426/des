@@ -62,6 +62,24 @@ import Register from './routes/student/register.jsx'
 import SavedCourses from './routes/student/savedCourses.jsx'
 import StudentRegister from './routes/student/studentRegister.jsx'
 
+import Dropout from './routes/student/dropout/dropout.jsx'
+import Dropout2 from './routes/student/dropout/dropout2.jsx'
+import DropoutProceed from './routes/student/dropout/dropout_proceed.jsx'
+import DropoutHclist from './routes/student/dropout/dropout_hclist.jsx'
+import DropoutHC from './routes/student/dropout/dropout_hc.jsx'
+import DropoutFinal from './routes/student/dropout/dropout_final.jsx'
+import DropoutConfirm from './routes/student/dropout/dropout_confirm.jsx'
+
+import HC from './routes/student/hostchange/hc.jsx'
+import HCWarning from './routes/student/hostchange/hc_warning.jsx'
+import HCTable6 from './routes/student/hostchange/hc_table6.jsx'
+import HCTable4 from './routes/student/hostchange/hc_table4.jsx'
+import HCTable3 from './routes/student/hostchange/hc_table3.jsx'
+import HCStream from './routes/student/hostchange/hc_stream.jsx'
+import HCStream2 from './routes/student/hostchange/hc_stream2.jsx'
+import HCNP from './routes/student/hostchange/hc_np.jsx'
+import HCInstitute from './routes/student/hostchange/hc_institute.jsx'
+import HCFinal from './routes/student/hostchange/hc_final.jsx'
 
 function App() {
   return (
@@ -130,6 +148,25 @@ function App() {
           <Route path="/register" element = {<Register/>} />
           <Route path="/savedCourses" element = {<SavedCourses/>} />
           <Route path="/studentRegister" element = {<StudentRegister/>} />
+
+          <Route path="/dropout" element = {<Dropout/>} />
+          <Route path="/dropout2" element = {<Dropout2 />} />
+          <Route path="/dropout_proceed" element = {<DropoutProceed/>} />
+          <Route path="/dropout_hclist" element = {<DropoutHclist/>} />
+          <Route path="/dropout_hc" element = {<DropoutHC/>} />
+          <Route path="/dropout_final" element = {<DropoutFinal/>} />
+          <Route path="/dropout_confirm" element = {<DropoutConfirm/>} />
+
+          <Route path="/hc" element = {<HC />} />
+          <Route path="/hc_warning" element = {<HCWarning />} />
+          <Route path="/hc_table6" element = {<HCTable6 />} />
+          <Route path="/hc_table4" element = {<HCTable4 />} />
+          <Route path="/hc_table3" element = {<HCTable3 />} />
+          <Route path="/hc_stream" element = {<HCStream />} />
+          <Route path="/hc_stream2" element = {<HCStream2 />} />
+          <Route path="/hc_np" element={<HCNP />} />
+          <Route path="/hc_institute" element={<HCInstitute />} />
+          <Route path="/hc_final" element={<HCFinal />} />
 
         </Route>
       </Routes>

@@ -11,9 +11,9 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
-import SideDrawer from './side-drawer'
+import SideDrawer from './../side-drawer'
 
-export default function degree() {
+export default function dropout_proceed() {
   return (
     <Box sx={{ display: 'flex' }}>
         <CssBaseline />
@@ -28,11 +28,11 @@ export default function degree() {
         <SideDrawer />
         <Box component="main" sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }} >
             <div class="row text-center">
-                <h2 class="mt-2">Degree</h2>
-                <h6 class="mt-2">Do you want to see your current degree status?</h6>
+                <h2 class="mt-2">Dropout</h2>
+                <h6 class="mt-2">Your institute does not allow dropout.  If you proceed, all your credits till now will be nullified. Do you still want to proceed?</h6>
                 <div class="buttons d-flex flex-row justify-content-center">
-                    <a href="/degree2" class="btn btn-primary me-3"> Yes </a>
-                    <a href="/dashboardNew" class="btn btn-primary"> No </a>
+                    <a href="/dropout_confirm" class="btn btn-primary me-3"> Yes </a>
+                    <a href="/dropout2" class="btn btn-primary me-3"> No </a>
                 </div>
             </div>
         </Box>

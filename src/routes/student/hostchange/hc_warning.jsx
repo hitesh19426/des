@@ -11,9 +11,9 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
-import SideDrawer from './side-drawer'
+import SideDrawer from './../side-drawer'
 
-export default function degree() {
+export default function hc_warning() {
   return (
     <Box sx={{ display: 'flex' }}>
         <CssBaseline />
@@ -28,11 +28,15 @@ export default function degree() {
         <SideDrawer />
         <Box component="main" sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }} >
             <div class="row text-center">
-                <h2 class="mt-2">Degree</h2>
-                <h6 class="mt-2">Do you want to see your current degree status?</h6>
+                <h2 class="mt-2 h2">Host Change</h2>
+                <h6 class="mt-2 mb-2 warning h4">Warning</h6>
+                <ul class="mt-4 mb-2 ">
+                    <li> You have completed DSA form your current institute. However, host also require DSA. So you will have to repeat DSA from host institute. </li>
+                    <li> You have done 8 online credits but host change only allows 4. So your 4 online credits will be nullified. </li>
+                </ul>
                 <div class="buttons d-flex flex-row justify-content-center">
-                    <a href="/degree2" class="btn btn-primary me-3"> Yes </a>
-                    <a href="/dashboardNew" class="btn btn-primary"> No </a>
+                    <a href="/hc_final" class="btn btn-primary me-3"> Proceed </a>
+                    <a href="/hc_institute" class="btn btn-primary me-3"> Back </a>
                 </div>
             </div>
         </Box>
