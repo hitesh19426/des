@@ -43,6 +43,26 @@ import DegreeTable from './routes/institute/degree-table.jsx'
 import DropoutThanks from './routes/institute/dropout-thanks.jsx'
 import DropoutTable from './routes/institute/dropout-table.jsx'
 
+import Apply from './routes/student/apply.jsx'
+import ConsortiumInstitiute from './routes/student/consortiumInstitiute.jsx'
+import Courselist from './routes/student/courselist.jsx'
+import Dashboard from './routes/student/dashboard.jsx'
+import DashboardNew from './routes/student/dashboardNew.jsx'
+import Degree from './routes/student/degree.jsx'
+import Degree2 from './routes/student/degree2.jsx'
+import Degree3 from './routes/student/degree3.jsx'
+import Degree4 from './routes/student/degree4.jsx'
+import Degree5 from './routes/student/degree5.jsx'
+import Degree6 from './routes/student/degree6.jsx'
+import Degree7 from './routes/student/degree7.jsx'
+import Fill from './routes/student/fill.jsx'
+import Grades from './routes/student/grades.jsx'
+import Profile from './routes/student/profile.jsx'
+import Register from './routes/student/register.jsx'
+import SavedCourses from './routes/student/savedCourses.jsx'
+import StudentRegister from './routes/student/studentRegister.jsx'
+
+
 function App() {
   return (
     <BrowserRouter>
@@ -91,6 +111,26 @@ function App() {
           <Route path="/hostECEtable" element = {<HostECETable />} />
           <Route path="/admissionMEthanks" element = {<AdmissionMEthanks />} />
           <Route path="/admissionMEtable" element = {<AdmissionTable />} />
+
+          <Route path="/apply" element = {<Apply />} />
+          <Route path="/consortiumInstitiute" element = {<ConsortiumInstitiute />} />
+          <Route path="/courselist" element = {<Courselist/>} />
+          <Route path="/dashboard" element = {<Dashboard/>} />
+          <Route path="/dashboardNew" element ={<DashboardNew/>} />
+          <Route path="/degree" element = {<DashboardNew />} />
+          <Route path="/degree" element = {<Degree/>} />
+          <Route path="/degree2" element = {<Degree2/>} />
+          <Route path="/degree3" element = {<Degree3/>} />
+          <Route path="/degree4" element = {<Degree4/>} />
+          <Route path="/degree5" element = {<Degree5/>} />
+          <Route path="/degree6" element = {<Degree6/>} />
+          <Route path="/degree7" element = {<Degree7/>} />
+          <Route path="/fill" element = {<Fill/>} />
+          <Route path="/grades" element = {<Grades/>} />
+          <Route path="/profile" element = {<Profile/>} />
+          <Route path="/register" element = {<Register/>} />
+          <Route path="/savedCourses" element = {<SavedCourses/>} />
+          <Route path="/studentRegister" element = {<StudentRegister/>} />
 
         </Route>
       </Routes>

@@ -37,7 +37,7 @@ export default function StudentSignupPage() {
                         </Form.Group>
 
                         <Row className="mx-5">
-                            <Button className="" variant="success" type="submit"> Sign Up </Button>
+                            <Button variant="success" type="submit" href="/dashboard"> Sign Up </Button>
                         </Row>
                         
                         <hr style={{height: 3}} />
