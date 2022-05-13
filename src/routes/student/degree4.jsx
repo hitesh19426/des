@@ -17,9 +17,9 @@ export default function degree4() {
                     <li><a href="/grades">Grades</a></li>
                     <li><a href="/consortiumInstitiute">Consortium Institutes</a></li>
                     <li><a href="/register">Course Registration</a></li>
-                    <li><a href="">Dropout</a></li>
-                    <li><a href="">Degree</a></li>
-                    <li><a href="">Host Change</a></li>
+                    <li><a href="/dropout">Dropout</a></li>
+                    <li><a href="/degree">Degree</a></li>
+                    <li><a href="/hostchange">Host Change</a></li>
 
                     <li><a href=""></a></li>
                     <li><a href=""></a></li>

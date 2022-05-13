@@ -1,5 +1,6 @@
 import React from 'react'
-
+import calendar from './calendar.png'
+import welcome from './welcome-back.png'
 
 export default function dashboardNew() {
   return (
@@ -17,10 +18,10 @@ export default function dashboardNew() {
                   <li><a href="/courselist">Course List</a></li>
                   <li><a href="/grades">Grades</a></li>
                   <li><a href="/consortiumInstitiute">Consortium Institutes</a></li>
-                  <li><a href="">Course Registration</a></li>
-                  <li><a href="">Dropout</a></li>
+                  <li><a href="/register">Course Registration</a></li>
+                  <li><a href="/dropout">Dropout</a></li>
                   <li><a href="/degree">Degree</a></li>
-                  <li><a href="">Host Change</a></li>
+                  <li><a href="/hostchange">Host Change</a></li>
 
                   <li><a href=""></a></li>
                   <li><a href=""></a></li>
@@ -34,7 +35,7 @@ export default function dashboardNew() {
           <div class="col-9 main">
               <div class="row">
                   <div class="col-8 mt-4">
-                      <img src="welcome-back.png" alt="" />
+                      <img src={welcome} alt="" />
                       <div class="box">
                           <p>
                               Dear Hitesh, <br />
@@ -44,7 +45,7 @@ export default function dashboardNew() {
                       </div>
                   </div>
                   <div class="col-4 mt-4 d-flex justify-content-end sidebar">
-                      <img src="calendar.png" alt="" />
+                      <img src={calendar} alt="" />
                   </div>
               </div>
           </div>
